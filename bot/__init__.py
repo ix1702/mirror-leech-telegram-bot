@@ -161,7 +161,7 @@ LOGGER.info("Generating USER_SESSION_STRING")
 app = Client('pyrogram', api_id=int(TELEGRAM_API), api_hash=TELEGRAM_HASH, bot_token=BOT_TOKEN, workers=343)
 
 try:
-    USER_STRING_SESSION = getConfig('USER_STRING_SESSION')
+    USER_STRING_SESSION = getConfig('BOT_STRING_SESSION')
     if len(USER_STRING_SESSION) == 0:
         raise KeyError
 except KeyError:
